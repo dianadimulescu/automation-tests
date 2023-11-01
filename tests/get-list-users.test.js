@@ -1,8 +1,12 @@
-const { spec } = require('pactum');
+const { spec, request } = require('pactum');
+const getUrl = 'https://reqres.in';
 
 describe('Read list users', () => {
+    before(() => {
+        request.setDefaultTimeout(10000);
+    });
+
     it('GET list users', async() => {
-        const getUrl = 'https://reqres.in'
         await spec()
         .get(getUrl + '/api/users?page=2')
         .expectStatus(200);

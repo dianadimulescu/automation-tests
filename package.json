@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx mocha tests --timeout=20000"
+    "test": "npx mocha tests --timeout=10000"
   },
   "author": "",
   "license": "ISC",
