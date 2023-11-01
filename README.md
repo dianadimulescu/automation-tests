@@ -1,3 +1,3 @@
 # automation-tests
 
-This repository contains automated tests for GET, POST, PUT, PATCH, DELETE using nodejs, mocha, pactum.
+This repository contains automated tests with GET, POST, PUT, DELETE using mocha, pactum.
